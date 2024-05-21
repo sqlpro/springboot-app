@@ -1,7 +1,10 @@
-.PHONY: build
+.PHONY: build clean run
 
 build: clean
-	./gradlew build -x test
+	./gradlew bootJar
 
 clean:
 	./gradlew clean
+
+run:
+	./gradlew bootRun
